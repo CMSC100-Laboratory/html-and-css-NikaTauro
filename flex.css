@@ -2,10 +2,12 @@ body{
     background-color: rgb(245, 218, 255);
 }
 
-.center {
-    display: block;
+.image {
+    width: 10%; /* smaller than 90% of board */
+    height: 10%;
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 .button {
