@@ -1,47 +1,108 @@
-body{
+body {
     background-color: rgb(245, 218, 255);
 }
 
 .image {
-    width: 10%; /* smaller than 90% of board */
-    height: 10%;
+    width: 20%;
+    height: 20%;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-.button {
-    background-color: rgb(228, 138, 255);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-
-flex-container {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    flex-direction: column;
-}
-
 .nav_bar {
     display: flex;
-    border-width: 10px;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: rgb(245, 218, 255);
+}
+
+.nav_button {
+    flex: 1;
+    padding: 8px;
+    margin: 0 5px;
+    font-size: 14px;
+    background-color: #ff00ff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav_button:hover {
+    background-color: #b30071;
+}
+
+.featured_photo {
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.body-flex-container{
+    flex-direction: row;
+}
+
+.polaroid-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 5px;
+    overflow-x: auto;
+}
+
+.polaroid {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 200px;
+    flex-shrink: 0;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.polaroid .caption {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.skills_image{
+    width: 30%;
+    height: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 12%;
+}
+
+.footer_image {
+    width: 15%;
+    height: 15%;
+    margin-left: 15%;
+    padding: 5px;
+    display: block;
+}
+
+.footer-flex-container {
+    display: flex;
     background-color: rgb(228, 138, 255);
     flex-direction: row;
 }
 
-.footer-flex-container{
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(228, 138, 255);
-    flex-direction: row;
-}
 .flex-item {
-    border-width: 2px;
+    padding: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
 }
